@@ -36,10 +36,10 @@ while Continue != 'exit':
         browser.get('http://helpdesk.bhanet.com/Helpdesk/Dashboard')
 
         UsernameHD = cssSelector('#tbUsername')
-        UsernameHD.send_keys('efrancis')#change Helpdesk username here
+        UsernameHD.send_keys('')#change Helpdesk username here
 
         passwordHD = cssSelector('#tbPassword')
-        passwordHD.send_keys('Winners@123456')#change Helpdesk password here
+        passwordHD.send_keys('')#change Helpdesk password here
         passwordHD.submit()
         time.sleep(2)
         #open ticket
@@ -97,10 +97,10 @@ while Continue != 'exit':
             loginCW.click()
 
             UsernameCW = cssSelector('#login > div:nth-child(2) > form:nth-child(1) > input:nth-child(2)')
-            UsernameCW.send_keys('cindy_johnson')#change carwars username here
+            UsernameCW.send_keys('')#change carwars username here
 
             passwordCW = cssSelector('#login > div:nth-child(2) > form:nth-child(1) > input:nth-child(5)')
-            passwordCW.send_keys('BHA')#change carwars password here
+            passwordCW.send_keys('')#change carwars password here
             passwordCW.submit()
 
             #fill out carwars and submit
@@ -175,10 +175,10 @@ while Continue != 'exit':
 
             #using xpath selector instead of css because of features on site
             UsernameDS = browser.find_element(By.XPATH, '/html/body/div[1]/div[2]/div/div/md-whiteframe/div[1]/form/div[1]/input')
-            UsernameDS.send_keys('vtefrancis')#change Dealersocket username here
+            UsernameDS.send_keys('')#change Dealersocket username here
 
             passwordDS = cssSelector('div.form-group:nth-child(3) > input:nth-child(1)')
-            passwordDS.send_keys('Capandironman3!')#change Dealersocket password here
+            passwordDS.send_keys('')#change Dealersocket password here
             passwordDS.submit()
 
             #fill out dealersocket form
@@ -270,10 +270,10 @@ while Continue != 'exit':
                     browser.get('https://www2.vauto.com/Va/Share/Login.aspx?redirect=636425381182555491&ReturnUrl=%2fVa')
 
                     UsernameVA = cssSelector('#X_PageBody_ctl00_ctl00_Login1_UserName')
-                    UsernameVA.send_keys('VTCJohnson')
+                    UsernameVA.send_keys('')
 
                     passwordVA = cssSelector('#X_PageBody_ctl00_ctl00_Login1_Password')
-                    passwordVA.send_keys('Batman!1')#change Vauto password here
+                    passwordVA.send_keys('')#change Vauto password here
 
                     SignIn = cssSelector('#X_PageBody_ctl00_ctl00_Login1_LoginButton')
                     SignIn.click()
