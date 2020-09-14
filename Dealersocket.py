@@ -250,7 +250,7 @@ while Continue != 'exit':
             if FinishDS1 == 'y':
                 FinishDS2 = input('\n'+'\n'+
                                   'DS Email Password: '+DSemailPassword+'\n'+
-                                  'POP3 Server 10.118.6.52'+'\n'+
+                                  'POP3 Server IPgoesHERE '+'\n'+
                                   'Admin Email Account bhahelpdesk@vtaig.com'+'\n'+
                                   'Use the above to fill out Email Lead Account and type "Y" to continue:'
                                   ).lower()
